@@ -41,7 +41,12 @@ python3 TFLite_detection_image.py --modeldir=yolov4 --image=test1.jpg
  python TFLite_detection_video.py --modeldir=yolov4 --video='test.mp4'
 
  ## Advanced usage
- For all these 4 detection scripts, you can specify exactly, what objects you want to detect. Write down the objects inside **production/TensorFlowLite/wantedobjects.txt**, each object on a single line and rerun the program. We a new object matches your list, you get a notification.
+ For all these 4 detection scripts, you can specify exactly, what objects you want to detect. 
+ Write down the objects inside **production/TensorFlowLite/wantedobjects.txt**, each object on a single line and rerun the program. When a new object matches your list, you get a notification. The include the option **--wantedobjects=wantedobjects.txt** when running the scripts.
+ 
+ ```
+ --wantedobjects=wantedobjects.txt
+ ```
 
 
  # Credits
